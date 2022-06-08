@@ -28,7 +28,7 @@ int main()
 #ifdef DEBUG
    // unit tests
    TestSpy().run();
-   TestBST().run();
+   //TestBST().run();
    TestSet().run();
 #endif // DEBUG
    

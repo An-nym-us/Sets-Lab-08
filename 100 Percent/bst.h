@@ -277,7 +277,7 @@ private:
   * BST :: DEFAULT CONSTRUCTOR
   ********************************************/
 template <typename T>
-BST <T> ::BST(): numElements(0), root(NULL)
+BST <T> ::BST(): numElements(0), root(nullptr)
 {
 }
 
@@ -298,7 +298,7 @@ BST <T> :: BST ( const BST<T>& rhs) : numElements(0), root(nullptr)
  * Move one tree to another
  ********************************************/
 template <typename T>
-BST <T> :: BST(BST <T> && rhs): numElements(0), root(NULL)
+BST <T> :: BST(BST <T> && rhs): numElements(0), root(nullptr)
 {
    root = rhs.root;
    numElements = rhs.numElements;

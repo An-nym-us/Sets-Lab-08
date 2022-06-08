@@ -44,19 +44,31 @@ public:
    //
    set() 
    { 
+      //this->bst = nullptr;
    }
    set(const set &  rhs)
    { 
+
+      this->bst = rhs.bst;
+
    }
    set(set && rhs) 
    { 
+      this->bst = std::move(rhs.bst);
    }
    set(const std::initializer_list <T> & il) 
    {
+      
+      this->bst.numElements = il.size();
+      //this->bst.root = il.begin();
+      //this->bst.root = new BST <T> ;
    }
    template <class Iterator>
    set(Iterator first, Iterator last) 
    {
+
+
+
    }
   ~set() { }
 
@@ -87,6 +99,7 @@ public:
    class iterator;
    iterator begin() const noexcept 
    { 
+
       return iterator(); 
    }
    iterator end() const noexcept 
