@@ -60,7 +60,7 @@ public:
    {
       
       this->bst.numElements = il.size();
-      //this->bst.root = il.begin();
+
       //this->bst.root = new BST <T> ;
    }
    template <class Iterator>
@@ -78,10 +78,12 @@ public:
 
    set & operator = (const set & rhs)
    {
+      bst = rhs.bst;
       return *this;
    }
    set & operator = (set && rhs)
    {
+      bst = std::move(rhs.bst);
       return *this;
    }
    set & operator = (const std::initializer_list <T> & il)
@@ -90,6 +92,7 @@ public:
    }
    void swap(set& rhs) noexcept
    {
+      bst.swap(rhs.bst);
    }
 
    //
@@ -99,8 +102,8 @@ public:
    class iterator;
    iterator begin() const noexcept 
    { 
-
-      return iterator(); 
+      
+      return iterator();
    }
    iterator end() const noexcept 
    { 
@@ -112,19 +115,21 @@ public:
    //
    iterator find(const T& t) 
    { 
-      return iterator(); 
+      // ;
+      return bst.find(t);
    }
 
    //
    // Status
    //
    bool   empty() const noexcept 
-   { 
-      return true;    
+   {   
+      return bst.empty();
    }
    size_t size() const noexcept 
    { 
-      return 99;     
+      
+      return bst.size();
    }
 
    //

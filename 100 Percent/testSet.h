@@ -46,28 +46,28 @@ public:
       //test_destructor_standard();
 
       //// Assign
-      //test_assign_emptyToEmpty();
-      //test_assign_standardToEmpty();
-      //test_assign_emptyToStandard();
-      //test_assign_oneToStandard();
-      //test_assign_standardToOne();
-      //test_assign_standardToStandard();
-      //test_assignMove_emptyToEmpty();
-      //test_assignMove_standardToEmpty();
-      //test_assignMove_emptyToStandard();
-      //test_assignMove_oneToStandard();
-      //test_assignMove_standardToOne();
-      //test_assignMove_standardToStandard();
+      test_assign_emptyToEmpty();
+      test_assign_standardToEmpty();
+      test_assign_emptyToStandard();
+      test_assign_oneToStandard();
+      test_assign_standardToOne();
+      test_assign_standardToStandard();
+      test_assignMove_emptyToEmpty();
+      test_assignMove_standardToEmpty();
+      test_assignMove_emptyToStandard();
+      test_assignMove_oneToStandard();
+      test_assignMove_standardToOne();
+      test_assignMove_standardToStandard();
       //test_assignInit_emptyToEmpty();
       //test_assignInit_standardToEmpty();
       //test_assignInit_emptyToStandard();
       //test_assignInit_oneToStandard();
       //test_assignInit_standardToOne();
       //test_assignInit_standardToStandard();
-      //test_swap_emptyToEmpty();
-      //test_swap_standardToEmpty();
-      //test_swap_emptyToStandard();
-      //test_swap_standardToStandard();
+      test_swap_emptyToEmpty();
+      test_swap_standardToEmpty();
+      test_swap_emptyToStandard();
+      test_swap_standardToStandard();
 
 
       //// Iterator
@@ -127,10 +127,10 @@ public:
 
 
       //// Status
-      //test_empty_empty();
-      //test_empty_standard();
-      //test_size_empty();
-      //test_size_standard();
+      test_empty_empty();
+      test_empty_standard();
+      test_size_empty();
+      test_size_standard();
 
       report("Set");
    }
