@@ -182,6 +182,7 @@ template <typename T>
 class set <T> :: iterator
 {
    friend class ::TestSet; // give unit tests access to the privates
+   friend class custom:: set<T>; 
 
 public:
    // constructors, destructors, and assignment operator
