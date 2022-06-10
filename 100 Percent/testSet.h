@@ -71,9 +71,9 @@ public:
 
 
       //// Iterator
-      //test_begin_empty();
-      //test_begin_standard();
-      //test_end_standard();
+      test_begin_empty();
+      test_begin_standard();
+      test_end_standard();
       //test_iterator_increment_standardToParent();
       //test_iterator_increment_standardToChild();
       //test_iterator_increment_standardToGrandma();
